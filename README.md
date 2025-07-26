@@ -1,46 +1,30 @@
-<h1 align="center">Hi 👋, I'm Pankaj Naik</h1>
-<h3 align="center">Aspiring Backend Developer | MCA Student | Spring Boot Enthusiast</h3>
+# 👤 User REST API (Spring Boot)
+
+A simple backend REST API for managing users, built with **Spring Boot**, **Spring Data JPA**, and **MySQL**. This project supports full **CRUD operations** and is designed with a clean, modular structure for easy scalability and integration.
 
 ---
 
-### 💻 Technologies & Tools I Use
-- 💡 Java 17
-- ⚙️ Spring Boot, Spring Data JPA, Hibernate
-- 🧩 REST APIs, Postman, Swagger UI
-- 🗃️ MySQL, PostgreSQL, H2
-- 🛠️ Git & GitHub, IntelliJ IDEA, VS Code
+## 🚀 Features
+
+- Create a new user
+- Retrieve all users or a specific user by ID
+- Update existing user details
+- Delete a user
+- RESTful API structure using standard HTTP methods
+- Error handling and validations
 
 ---
 
-### 🔭 Projects I'm Working On
-- ✅ **To-Do List REST API** – CRUD-based task management with status filter
-- 📘 **BookStore API** – Search, add, and manage book inventory
-- 📋 **Quiz/Test System** – Role-based quiz app with result tracking
-- 🍲 **Recipe Blog Backend** – Upload, view, and rate recipes (Spring MVC + MySQL)
+## 🛠️ Tech Stack
+
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- MySQL  
+- Maven  
+- Postman (for testing)
 
 ---
 
-### 🌱 Currently Learning
-- 🔐 Spring Security & JWT Auth
-- 🧱 Microservices Architecture
-- 🐳 Docker & CI/CD (Jenkins)
+## 📁 Folder Structure
 
----
-
-### 📫 Connect With Me
-- 📧 Email: pankajnaik297@gmail.com
-- 💼 LinkedIn: [Pankaj Naik](https://www.linkedin.com/in/pankaj-naik-788549262)
-- 🌐 Portfolio: Coming Soon...
-
----
-
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pankajnaik&show_icons=true&theme=github_dark" alt="pankajnaik github stats" />
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pankajnaik&theme=dark" alt="pankajnaik streak stats" />
-</p>
-
----
-
-> “Code. Learn. Improve. Repeat.” – My developer mantra 🚀
