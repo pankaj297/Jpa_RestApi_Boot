@@ -1,10 +1,14 @@
 package com.bootrestuser.bootrestuser.Model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,6 +26,29 @@ public class User {
     private String city;
     @Column(name = "User_Age")
     private int age;
+
+    
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private UserScore userScore;
+
+   
+
+    public User(long id, String name, String city, int age, UserScore userScore) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+        this.age = age;
+        this.userScore = userScore;
+    }
+
+    public UserScore getUserScore() {
+        return userScore;
+    }
+
+    public void setUserScore(UserScore userScore) {
+        this.userScore = userScore;
+    }
 
     // Setter
     public void setId(long id) {
@@ -57,22 +84,15 @@ public class User {
         return age;
     }
 
-    // Parameterized Constructor
-    public User(long id, String name, String city, int age) {
-        this.id = id;
-        this.name = name;
-        this.city = city;
-        this.age = age;
-    }
-
+   
     // default Constructor
     public User() {
     }
 
-    // ToString
     @Override
     public String toString() {
-        return "User [id=" + id + ", name=" + name + ", city=" + city + ", age=" + age + "]";
+        return "User [id=" + id + ", name=" + name + ", city=" + city + ", age=" + age + ", userScore=" + userScore
+                + "]";
     }
-
+   
 }
